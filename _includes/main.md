@@ -42,13 +42,15 @@ btnExec.setOnAction( (e: ActionEvent) => println("status: " + cmd.execute()) )
 ### Adding TangoFX to your project
 
 Build the project:
+
 ```
 $ git clone https://github.com/mliszcz/tangofx.git
 $ cd tangofx
 $ sbt update publish-local
 ```
 
-Then, add following dependency:
+Then add tangofx dependency:
+
 ```
 io.github.tangofx % tangofx_2.11 % 0.0.1-SNAPSHOT
 ```
