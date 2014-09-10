@@ -37,8 +37,9 @@
 		</header>
 
 		<section>
-			test
-			{% include test.md %}
+			test2
+			{% capture sidebar %}{% include test.md %}{% endcapture %}
+			{{ sidebar | markdownify }}
 		</section>
 
 		<footer>
