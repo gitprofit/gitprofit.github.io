@@ -37,7 +37,8 @@
 		</header>
 
 		<section>
-			{% include main.md %}
+			{% capture main-content %}{% include main.md %}{% endcapture %}
+			{{ main-content | markdownify }}
 		</section>
 
 		<footer>
