@@ -38,7 +38,7 @@
 
 		<section>
 			test3
-			{% capture content %}{% include test.md %}{% content %}
+			{% capture content %}{% include test.md %}{% endcapture %}
 			{{ content | markdownify }}
 		</section>
 
