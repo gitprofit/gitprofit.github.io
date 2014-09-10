@@ -1,6 +1,3 @@
----
----
-
 ### TangoFX
 TangoFX is a Scala / JavaFX wrapper for the [TangORB](http://www.tango-controls.org/download/tangorb) library. It provides complete ObjectProperty[T] implementation representing a generic device attribute. Convenient wrappers for TangORB API proxies are also available.
 
@@ -35,8 +32,13 @@ nfValue.readOnlyProperty <== (caseOf
     default false
 end)
 
-att.value.addListener( (newValue: Double) => println(s"new value $newvalue") )
-btnExec.setOnAction( (e: ActionEvent) => println("status: " + cmd.execute()) )
+att.value.addListener( (newValue: Double) =>
+    println(s"new value $newvalue")
+)
+
+btnExec.setOnAction( (e: ActionEvent) =>
+    println("status: " + cmd.execute())
+)
 ```
 
 ### Adding TangoFX to your project
